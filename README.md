@@ -2,7 +2,7 @@
 
 A sleek, responsive weather application built with the [T3 Stack](https://create.t3.gg/), providing real-time weather information with beautiful UI animations and detailed forecasts.
 
-![Weather App Screenshot](https://via.placeholder.com/800x400?text=Weather+App+Screenshot)
+![Weather App ](https://dxtrweather.vercel.app/)
 
 ## ✨ Features
 
