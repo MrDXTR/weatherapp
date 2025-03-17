@@ -1,26 +1,29 @@
-# Weather App
+# Modern Weather App
 
-This is a modern weather application built with the [T3 Stack](https://create.t3.gg/), providing real-time weather information with a clean, responsive interface.
+A sleek, responsive weather application built with the [T3 Stack](https://create.t3.gg/), providing real-time weather information with beautiful UI animations and detailed forecasts.
 
-## Features
+![Weather App Screenshot](https://via.placeholder.com/800x400?text=Weather+App+Screenshot)
 
-- **Real-time Weather Data**: Get current weather conditions for any location
-- **Forecast**: View detailed forecasts for the upcoming days
-- **Location Search**: Search for weather by city name or postal code
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Dark/Light Mode**: Choose your preferred theme for comfortable viewing
+## ✨ Features
 
-## Tech Stack
+- **Real-time Weather Data**: Current conditions with detailed metrics
+- **7-Day Forecast**: Comprehensive weather outlook for the week ahead
+- **Hourly Predictions**: Hour-by-hour weather changes throughout the day
+- **Location Search**: Find weather by city name, postal code, or geolocation
+- **Responsive Design**: Optimized for all devices from mobile to desktop
+- **Animated UI**: Smooth transitions and interactive elements
+- **Dynamic Backgrounds**: Weather-appropriate visual themes
 
-This project leverages the powerful T3 Stack:
+## 🛠️ Tech Stack
 
-- [Next.js](https://nextjs.org) - React framework for server-rendered applications
+- [Next.js](https://nextjs.org) - React framework with server components
 - [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
-- [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework
-- [Geist](https://geist.dev/) - Beautiful typography and UI components
-- [Zod](https://zod.dev/) - TypeScript-first schema validation
+- [Tailwind CSS](https://tailwindcss.com) - Utility-first styling
+- [Radix UI](https://www.radix-ui.com/) - Accessible UI components
+- [Framer Motion](https://www.framer.com/motion/) - Animation library
+- [WeatherAPI](https://www.weatherapi.com/) - Weather data provider
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -32,7 +35,7 @@ This project leverages the powerful T3 Stack:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/weatherapp.git
+   git clone https://github.com/mrdxtr/weatherapp.git
    cd weatherapp
    ```
 
@@ -44,7 +47,7 @@ This project leverages the powerful T3 Stack:
    yarn install
    ```
 
-3. Create a `.env` file in the root directory and add your API keys:
+3. Create a `.env.local` file in the root directory:
 
    ```
    NEXT_PUBLIC_WEATHER_API_KEY=your_weather_api_key
@@ -54,32 +57,45 @@ This project leverages the powerful T3 Stack:
 
    ```bash
    npm run dev
-   # or
-   yarn dev
    ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Development
+## 📱 App Structure
+
+- **Current Weather**: Shows temperature, condition, and key metrics
+- **Weather Forecast**: Tabbed interface for daily forecasts
+- **Hourly Breakdown**: Scrollable hourly weather predictions
+- **Location Search**: Search bar with autocomplete suggestions
+
+## 🧩 Components
+
+The app is built with reusable components:
+
+- `CurrentWeather`: Displays current weather conditions
+- `Forecast`: Shows multi-day weather forecast
+- `LocationSearch`: Handles location input and search
+- `WeatherBackground`: Dynamic background based on conditions
+
+## 🔧 Development
 
 ### Available Scripts
 
-- `npm run dev` - Start the development server
-- `npm run build` - Build the application for production
-- `npm run start` - Start the production server
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Run production build
 - `npm run lint` - Run ESLint
-- `npm run format:write` - Format code with Prettier
-- `npm run typecheck` - Check TypeScript types
+- `npm run format` - Format code with Prettier
 
-## Deployment
+## 🌐 Deployment
 
-Follow our deployment guides for:
+The app is optimized for deployment on:
 
-- [Vercel](https://create.t3.gg/en/deployment/vercel)
-- [Netlify](https://create.t3.gg/en/deployment/netlify)
-- [Docker](https://create.t3.gg/en/deployment/docker)
+- [Vercel](https://vercel.com) (recommended)
+- [Netlify](https://netlify.com)
+- [AWS Amplify](https://aws.amazon.com/amplify/)
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -89,12 +105,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
-- Weather data provided by [Weather API Provider]
-- Icons by [Icon Provider]
-- Inspired by [Inspiration Source]
+- Weather data provided by [WeatherAPI.com](https://www.weatherapi.com/)
+- UI components inspired by [shadcn/ui](https://ui.shadcn.com/)
+- Icons from [Lucide Icons](https://lucide.dev/)
