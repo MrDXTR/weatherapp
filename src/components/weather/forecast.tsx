@@ -70,17 +70,14 @@ export function Forecast({ weatherData }: ForecastProps) {
     >
       <h2 className="mb-4 text-2xl font-bold text-white">Weather Forecast</h2>
       <Tabs defaultValue="day-0" className="w-full">
-        <TabsList
-          defaultValue="day-0"
-          className="w-full bg-black/30 backdrop-blur-md"
-        >
+        <TabsList className="w-full flex-nowrap overflow-x-auto bg-black/30 backdrop-blur-md">
           {weatherData.forecast.forecastday.map((day, index) => (
             <TabsTrigger
               key={day.date}
               value={`day-${index}`}
-              className="flex-1 text-white data-[state=active]:bg-blue-500/30"
+              className="min-w-[100px] flex-1 text-sm text-white"
             >
-              {index === 0 ? "Today" : formatDay(day.date)}
+              {index === 0 ? "Today" : formatDay(day.date)?.slice(0, 3)}
             </TabsTrigger>
           ))}
         </TabsList>
