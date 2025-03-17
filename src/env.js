@@ -16,7 +16,12 @@ export const env = createEnv({
    * `NEXT_PUBLIC_`.
    */
   client: {
-    // NEXT_PUBLIC_CLIENTVAR: z.string(),
+    // Make these optional during development
+    NEXT_PUBLIC_OPENWEATHER_API_KEY: process.env.NODE_ENV === "production" 
+      ? z.string().min(1) 
+      : z.string().optional().default("dummy-key"),
+    NEXT_PUBLIC_DEFAULT_LATITUDE: z.string().optional().default("40.7128"),
+    NEXT_PUBLIC_DEFAULT_LONGITUDE: z.string().optional().default("-74.0060"),
   },
 
   /**
@@ -25,7 +30,9 @@ export const env = createEnv({
    */
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
-    // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
+    NEXT_PUBLIC_OPENWEATHER_API_KEY: process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY,
+    NEXT_PUBLIC_DEFAULT_LATITUDE: process.env.NEXT_PUBLIC_DEFAULT_LATITUDE,
+    NEXT_PUBLIC_DEFAULT_LONGITUDE: process.env.NEXT_PUBLIC_DEFAULT_LONGITUDE,
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially
