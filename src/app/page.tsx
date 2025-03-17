@@ -196,7 +196,17 @@ export default function HomePage() {
               className="mt-8 text-center text-sm text-white/60"
             >
               <p>Weather data provided by WeatherAPI.com</p>
-              <p className="mt-1">© {new Date().getFullYear()} Weather App</p>
+              <div className="mt-2 flex items-center justify-center gap-2">
+                <a
+                  href="https://github.com/mrdxtr/weatherapp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-white"
+                >
+                  View on GitHub
+                </a>
+                <p className="">© {new Date().getFullYear()} Weather App</p>
+              </div>
             </motion.footer>
           </div>
         </WeatherBackground>
