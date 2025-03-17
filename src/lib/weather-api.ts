@@ -25,6 +25,7 @@ export interface WeatherData {
     feelslike_c: number;
     feelslike_f: number;
     uv: number;
+    is_day: number;
   };
   forecast: {
     forecastday: Array<{
