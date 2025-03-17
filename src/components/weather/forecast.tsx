@@ -145,7 +145,7 @@ export function Forecast({ weatherData }: ForecastProps) {
                         <Wind className="h-5 w-5 text-blue-300" />
                         <div>
                           <div className="text-sm text-white/70">Wind</div>
-                          <div>{Math.round(10 + Math.random() * 15)} km/h</div>
+                          <div>{day.day.maxwind_kph} km/h</div>
                         </div>
                       </div>
                     </div>

@@ -31,6 +31,7 @@ export interface WeatherData {
     forecastday: Array<{
       date: string;
       day: {
+        maxwind_kph: any;
         maxtemp_c: number;
         maxtemp_f: number;
         mintemp_c: number;
