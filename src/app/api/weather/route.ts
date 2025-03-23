@@ -12,7 +12,7 @@ export async function GET(request: Request) {
     );
   }
 
-  const apiKey = env.OPENWEATHER_API_KEY; // No NEXT_PUBLIC_ prefix
+  const apiKey = env.OPENWEATHER_API_KEY;
   const response = await fetch(
     `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${query}&days=5&aqi=no&alerts=no`,
   );

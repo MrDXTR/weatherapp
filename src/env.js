@@ -8,9 +8,10 @@ export const env = createEnv({
    */
   server: {
     NODE_ENV: z.enum(["development", "test", "production"]),
-    OPENWEATHER_API_KEY: process.env.NODE_ENV === "production" 
-      ? z.string().min(1) 
-      : z.string().optional().default("dummy-key"),
+    OPENWEATHER_API_KEY:
+      process.env.NODE_ENV === "production"
+        ? z.string().min(1)
+        : z.string().optional().default("dummy-key"),
   },
 
   /**
