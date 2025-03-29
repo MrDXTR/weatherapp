@@ -75,7 +75,7 @@ export function Forecast({ weatherData }: ForecastProps) {
             <TabsTrigger
               key={day.date}
               value={`day-${index}`}
-              className=" text-sm text-white"
+              className="w-full text-sm text-white"
             >
               {index === 0 ? "Today" : formatDay(day.date)?.slice(0, 3)}
             </TabsTrigger>
